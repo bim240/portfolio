@@ -1,0 +1,9 @@
+.h4_heading {
+  font-weight: bold;
+}
+
+.no_radius {
+  border-radius: none !important;
+  /* height: 100vh; */
+  border: none;
+}
