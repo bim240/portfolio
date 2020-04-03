@@ -2,8 +2,32 @@
   font-weight: bold;
 }
 
+.home_section {
+  background-image: url("../images/home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 92vh;
+  /* width: 100 */
+  padding-top: 8rem;
+}
 .no_radius {
   border-radius: none !important;
   /* height: 100vh; */
   border: none;
+}
+.link_icon {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+
+.margin_top {
+  /* margin-top: 1rem; */
+}
+.parallax {
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

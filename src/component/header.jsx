@@ -24,11 +24,11 @@ const Header = () => {
               <Nav.Link className="mr-2" href="#aboutme">
                 About Me
               </Nav.Link>
-              <Nav.Link className="mr-2" href="#resume">
-                Resume
+              <Nav.Link className="mr-2" href="#Skills">
+                Skills
               </Nav.Link>
-              <Nav.Link className="mr-2" href="#portfolio">
-                Portfolio
+              <Nav.Link className="mr-2" href="#mywork">
+                My Work
               </Nav.Link>
               <Nav.Link className="mr-2" href="#blog">
                 Blog
