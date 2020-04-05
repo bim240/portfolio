@@ -4,6 +4,7 @@ import { Row } from "react-bootstrap";
 import Header from "./component/header";
 import Home from "./component/home";
 import AboutMe from "./component/aboutMe";
+import Skills from "./component/skills";
 import "./assets/stylesheets/style.css";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <Home />
       <AboutMe />
+      <Skills />
     </div>
   );
 }
