@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Typical from "react-typical";
 import { Card, Container, Jumbotron } from "react-bootstrap";
 import { FaFacebook, FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
 
@@ -15,7 +16,25 @@ const Home = () => {
               <Card.Title className="margin_top">
                 <h1 className="font-weight-bold  ">I'M Bimlendu</h1>
               </Card.Title>
-              <Card.Text>A Full Stack Developer</Card.Text>
+              <Card.Text>
+                <h3>
+                  I'm a{" "}
+                  <Typical
+                    steps={[
+                      "Web Designer.",
+                      1000,
+                      "Web Developer.",
+                      1000,
+                      "Full Stack Developer.",
+                      1000,
+                      "MERN Developer.",
+                      1000,
+                    ]}
+                    loop={Infinity}
+                    wrapper="b"
+                  />{" "}
+                </h3>
+              </Card.Text>
               <Card.Text>
                 A profession that completely matches your talent, aspirations
                 and
