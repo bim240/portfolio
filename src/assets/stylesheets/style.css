@@ -1,6 +1,9 @@
 body {
   background-color: #e9ecef;
 }
+body::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
 
 .h4_heading {
   font-weight: bold;

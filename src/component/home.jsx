@@ -13,7 +13,7 @@ const Home = () => {
           <Card.ImgOverlay>
             <Container>
               <Card.Title className="margin_top">
-                <h2>I'M Bimlendu</h2>
+                <h1 className="font-weight-bold  ">I'M Bimlendu</h1>
               </Card.Title>
               <Card.Text>A Full Stack Developer</Card.Text>
               <Card.Text>
