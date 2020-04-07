@@ -15,8 +15,8 @@ const Skills = () => {
       <div className="container">
         <h2 className=" font-weight-bold">Skills</h2>
         <p className="font-weight-bold">
-          The future belongs to those who Learn more skills and combine them in
-          creative ways.
+          The future belongs to those who Learn more skills and combine
+          <br /> them in creative ways.
         </p>
         <div className="row mt-5">
           {/* html css */}
