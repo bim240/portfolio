@@ -9,6 +9,7 @@ import "./assets/stylesheets/style.css";
 import MyWork from "./component/myWork";
 import Article from "./component/article";
 import Contact from "./component/contact";
+import Footer from "./component/footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <MyWork />
       <Article />
       <Contact />
+      <Footer />
     </div>
   );
 }

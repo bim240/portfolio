@@ -8,7 +8,7 @@ class Contact extends React.Component {
   render() {
     return (
       <>
-        <Container className="mt-5 mb-5 ">
+        <Container className="mt-5 mb-5 " id="contacts">
           <h2 className=" font-weight-bold text-center">Get in touch</h2>
           {/* <p className="font-weight-bold">To write is to reveal oneself.</p> */}
           <form
