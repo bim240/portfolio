@@ -4,13 +4,13 @@ import { IoIosCall } from "react-icons/io";
 import { DiYeoman } from "react-icons/di";
 import { MdEmail } from "react-icons/md";
 import { GiFreedomDove } from "react-icons/gi";
-import { Jumbotron, Container, Row, Col } from "react-bootstrap";
+import { Jumbotron, Container } from "react-bootstrap";
 
 const AboutMe = () => {
   return (
     <>
       {" "}
-      <Jumbotron>
+      <Jumbotron id="aboutme">
         <Container fluid="md">
           <h2 className=" font-weight-bold">About Me</h2>
           <h5 className="font-weight-bold heading-3">

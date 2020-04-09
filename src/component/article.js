@@ -1,12 +1,14 @@
 import React from "react";
 import { Flipper, Flipped } from "react-flip-toolkit";
 import { FaLink, FaMedium } from "react-icons/fa";
+import { v4 as uuid } from "uuid";
+// import { IoIosArrowDropdown } from "react-icons/io";
 
 class Article extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeTab: "all",
+      collapse: true,
       allProjects: [
         {
           title: "JWT Authentication",
@@ -15,7 +17,7 @@ class Article extends React.Component {
           link: null,
           mediumLink:
             "https://medium.com/@bim240/jwt-authentication-fe47f8993461",
-          img: "react.png",
+          img: "jwt.png",
           tag: ["Node"],
           catagory: "node",
         },
@@ -23,10 +25,10 @@ class Article extends React.Component {
           title: "DOM (Document Object Model)",
           description:
             "This project was aimed for those who dont know where to look for resources. This is a one point destination for them. We all know internet is a big mess, its just a little help",
-          link: "https://techeveryday.codes",
+          link: null,
           mediumLink:
             "https://medium.com/@bim240/dom-document-object-model-8e12d6f47c1e",
-          img: "techeveryday.jpg",
+          img: "dom.png",
           tag: ["JavaScript"],
           catagory: "js",
         },
@@ -34,9 +36,9 @@ class Article extends React.Component {
           title: "Variables in js",
           description:
             "This project has neumorphic design which gives a real life interaction feel ",
-          link: "https://medium-clone357.netlify.com",
+          link: null,
           mediumLink: "https://medium.com/@bim240/variables-in-js-bc5fcb46e640",
-          img: "medium.jpg",
+          img: "variable.png",
           tag: ["React"],
           catagory: "react",
         },
@@ -44,9 +46,9 @@ class Article extends React.Component {
           title: "AltCampus",
           description:
             "This article is about my 1-month experience at AltCampus.As at AltCampus, we learn technical skills so I will first discuss the technical part and other stuff later on.",
-          link: "https://paint357.netlify.com",
+          link: null,
           mediumLink: "https://medium.com/@bim240/altcampus-48208a0b92d5",
-          img: "paint.jpg",
+          img: "altcampus.png",
           tag: ["AltCampus"],
           catagory: "react",
         },
@@ -58,7 +60,7 @@ class Article extends React.Component {
           link: null,
           mediumLink:
             "https://medium.com/@bim240/what-and-why-of-responsive-web-design-29f5d3d47ec1",
-          img: "bookly.jpg",
+          img: "responsive.png",
           tag: ["HTML & CSS"],
           catagory: "html",
         },
@@ -69,7 +71,7 @@ class Article extends React.Component {
           link: null,
           mediumLink:
             "https://medium.com/@bim240/flexbox-altcampus-a9627fab44ff",
-          img: "todo.jpg",
+          img: "flexbox.jpg",
           tag: ["HTML & CSS"],
           catagory: "js",
         },
@@ -80,7 +82,7 @@ class Article extends React.Component {
           link: null,
           mediumLink:
             "https://medium.com/@bim240/advanced-positioning-in-css-aa397c73c4",
-          img: "canvas1.jpg",
+          img: "position.jpeg",
           tag: ["HTML & CSS"],
           catagory: "html",
         },
@@ -91,7 +93,7 @@ class Article extends React.Component {
           link: null,
           mediumLink:
             "https://medium.com/@bim240/positioning-content-in-html-css-8794c6d4c2a1",
-          img: "canvas2.jpg",
+          img: "position1.jpeg",
           tag: ["HTML & CSS"],
           catagory: "html",
         },
@@ -102,7 +104,7 @@ class Article extends React.Component {
           link: null,
           mediumLink:
             "https://medium.com/@bim240/box-model-altcampus-c26668dc5eed",
-          img: "alienface.jpg",
+          img: "box-model.png",
           tag: ["HTML", "CSS"],
           catagory: "html",
         },
@@ -113,7 +115,7 @@ class Article extends React.Component {
           link: null,
           mediumLink:
             "https://medium.com/@bim240/css-in-use-at-altcampus-39af963e37c",
-          img: "alienface.jpg",
+          img: "css.jpeg",
           tag: ["HTML", "CSS"],
           catagory: "html",
         },
@@ -123,84 +125,189 @@ class Article extends React.Component {
             "Recently I started learning Html & CSS. HTML is used for content writing and CSS is used for designing those content. Let’s take the human body as an example to understand it better. Now here skeleton is Html and CSS part is how muscle cover our skeleton",
           link: null,
           mediumLink: "https://medium.com/@bim240/html-css-713c434d0946",
-          img: "alienface.jpg",
+          img: "html&css.png",
           tag: ["HTML", "CSS"],
           catagory: "html",
         },
       ],
     };
   }
+  handleCollapse = () => {
+    this.setState({ collapse: !this.state.collapse });
+  };
   render() {
     return (
       <>
         {" "}
         <>
-          <div class="container mt-5">
+          <div className="container mt-5" id="articles">
             <h2 className=" font-weight-bold">Articles</h2>
             <p className="font-weight-bold">To write is to reveal oneself.</p>
 
-            {/* <Flipper flipKey={this.state.activeTab}> */}
-            <div class="card-groups">
-              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
-                {/* <Shuffle> */}
-                {this.state.allProjects.map((project) => {
-                  return (
-                    // <Flipped flipId="coolDiv" ease="easeOutExpo">
-                    <div class="col mb-5 mt-3">
-                      <div class="card h-100 ">
-                        <div class="overlay_container">
-                          <img
-                            src={`./project/${project.img}`}
-                            class="card-img-top"
-                            alt="..."
-                          />
-                          <div class="work_image_overlay">
-                            <div class="text">
-                              {project.link ? (
-                                <a href={project.link} target="_blank">
-                                  <button
-                                    title="Live"
-                                    type="button"
-                                    class="btn btn-light btn-lg mr-3"
-                                  >
-                                    <FaLink />
-                                  </button>
-                                </a>
-                              ) : (
-                                ""
-                              )}
+            {/* all articles */}
+            <Flipper flipKey={this.state.activeTab}>
+              <div className="card-groups">
+                <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                  {/* <Shuffle> */}
+                  {this.state.allProjects.map((project, index) => {
+                    if (index <= 5) {
+                      return (
+                        <Flipped
+                          flipId="coolDiv"
+                          ease="easeOutExpo"
+                          key={uuid()}
+                        >
+                          <div className="col mb-5 mt-3">
+                            <div className="card h-100 ">
+                              <div className="overlay_container">
+                                <img
+                                  src={`./articles/${project.img}`}
+                                  className="card-img-top"
+                                  alt="..."
+                                />
+                                <div className="work_image_overlay">
+                                  <div className="text">
+                                    {project.link ? (
+                                      <a
+                                        href={project.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        <button
+                                          title="Live"
+                                          type="button"
+                                          className="btn btn-light btn-lg mr-3"
+                                        >
+                                          <FaLink />
+                                        </button>
+                                      </a>
+                                    ) : (
+                                      ""
+                                    )}
 
-                              <a href={project.mediumLink} target="_blank">
-                                <button
-                                  title="Medium"
-                                  type="button"
-                                  class="btn btn-light btn-lg"
-                                >
-                                  <FaMedium />
-                                </button>
-                              </a>
+                                    <a
+                                      href={project.mediumLink}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                    >
+                                      <button
+                                        title="Medium"
+                                        type="button"
+                                        className="btn btn-light btn-lg"
+                                      >
+                                        <FaMedium />
+                                      </button>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="card-body">
+                                <h5 className="card-title font-weight-bold">
+                                  {project.title}
+                                </h5>
+                                <p className="card-text font-weight-bold">
+                                  {project.description}{" "}
+                                  <a
+                                    href={project.mediumLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >
+                                    Read More
+                                  </a>
+                                </p>
+                              </div>
+                              <div className="card-footer"></div>
                             </div>
                           </div>
+                        </Flipped>
+                      );
+                    } else
+                      return (
+                        <div className="collapse" id="collapse" key={uuid()}>
+                          <Flipped flipId="coolDiv" ease="easeOutExpo">
+                            <div className="col mb-5 mt-3">
+                              <div className="card h-100 ">
+                                <div className="overlay_container">
+                                  <img
+                                    src={`./articles/${project.img}`}
+                                    className="card-img-top"
+                                    alt="..."
+                                  />
+                                  <div className="work_image_overlay">
+                                    <div className="text">
+                                      {project.link ? (
+                                        <a
+                                          href={project.link}
+                                          target="_blank"
+                                          rel="noopener noreferrer"
+                                        >
+                                          <button
+                                            title="Live"
+                                            type="button"
+                                            className="btn btn-light btn-lg mr-3"
+                                          >
+                                            <FaLink />
+                                          </button>
+                                        </a>
+                                      ) : (
+                                        ""
+                                      )}
+
+                                      <a
+                                        href={project.mediumLink}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        <button
+                                          title="medium"
+                                          type="button"
+                                          className="btn btn-light btn-lg"
+                                        >
+                                          <FaMedium />
+                                        </button>
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="card-body">
+                                  <h5 className="card-title font-weight-bold">
+                                    {project.title}
+                                  </h5>
+                                  <p className="card-text font-weight-bold">
+                                    {project.description}{" "}
+                                    <a
+                                      href={project.mediumLink}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                    >
+                                      Read More
+                                    </a>
+                                  </p>
+                                </div>
+                                <div className="card-footer"></div>
+                              </div>
+                            </div>
+                          </Flipped>
                         </div>
-                        <div class="card-body">
-                          <h5 class="card-title font-weight-bold">
-                            {project.title}
-                          </h5>
-                          <p class="card-text font-weight-bold">
-                            {project.description}{" "}
-                            <a href={project.mediumLink}> Read more</a>
-                          </p>
-                        </div>
-                        <div class="card-footer"></div>
-                      </div>
-                    </div>
-                    // </Flipped>
-                  );
-                })}
-                {/* </Shuffle> */}
+                      );
+                  })}
+                  {/* </Shuffle> */}
+                </div>
               </div>
-            </div>
-            {/* </Flipper> */}
+            </Flipper>
+            {/* all articles*/}
+            {/* collapse */}
+            <a
+              className="btn btn-dark font-weight-bold ml-5 mr-5 mb-5"
+              data-toggle="collapse"
+              href="#collapse"
+              role="button"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              {" "}
+              {this.state.collapse ? "Show All" : "Hide"}
+            </a>
           </div>
         </>{" "}
       </>

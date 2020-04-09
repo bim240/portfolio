@@ -1,4 +1,5 @@
 import React from "react";
+import { v4 as uuid } from "uuid";
 import { Flipper, Flipped } from "react-flip-toolkit";
 import { FaLink, FaGithub } from "react-icons/fa";
 
@@ -106,14 +107,14 @@ class MyWork extends React.Component {
   render() {
     return (
       <>
-        <div class="container mt-5">
+        <div className="container mt-5" id="mywork">
           <h2 className=" font-weight-bold">My Work</h2>
           <p className="font-weight-bold">
             You've got to get up every morning with determination if you're
             <br />
             going to go to bed with satisfaction.
           </p>
-          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <div className="nav nav-tabs" id="nav-tab" role="tablist">
             <a
               onClick={() => this.handleFilter("all")}
               class="nav-item nav-link text-reset font-weight-bold active"
@@ -164,29 +165,33 @@ class MyWork extends React.Component {
             </a>
           </div>
           <Flipper flipKey={this.state.activeTab}>
-            <div class="card-groups">
-              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+            <div className="card-groups">
+              <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3">
                 {/* <Shuffle> */}
                 {this.state.allProjects.map((project) => {
                   if (this.state.activeTab === "all") {
                     return (
-                      <Flipped flipId="coolDiv" ease="easeOutExpo">
-                        <div class="col mb-5 mt-3">
-                          <div class="card h-100 ">
-                            <div class="overlay_container">
+                      <Flipped flipId="coolDiv" ease="easeOutExpo" key={uuid()}>
+                        <div className="col mb-5 mt-3">
+                          <div className="card h-100 ">
+                            <div className="overlay_container">
                               <img
                                 src={`./project/${project.img}`}
-                                class="card-img-top"
+                                className="card-img-top"
                                 alt="..."
                               />
-                              <div class="work_image_overlay">
-                                <div class="text">
+                              <div className="work_image_overlay">
+                                <div className="text">
                                   {project.link ? (
-                                    <a href={project.link} target="_blank">
+                                    <a
+                                      href={project.link}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                    >
                                       <button
                                         title="Live"
                                         type="button"
-                                        class="btn btn-light btn-lg mr-3"
+                                        className="btn btn-light btn-lg mr-3"
                                       >
                                         <FaLink />
                                       </button>
@@ -195,11 +200,15 @@ class MyWork extends React.Component {
                                     ""
                                   )}
 
-                                  <a href={project.gitLink} target="_blank">
+                                  <a
+                                    href={project.gitLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >
                                     <button
                                       title="GitHub"
                                       type="button"
-                                      class="btn btn-light btn-lg"
+                                      className="btn btn-light btn-lg"
                                     >
                                       <FaGithub />
                                     </button>
@@ -207,38 +216,46 @@ class MyWork extends React.Component {
                                 </div>
                               </div>
                             </div>
-                            <div class="card-body">
-                              <h5 class="card-title font-weight-bold">
+                            <div className="card-body">
+                              <h5 className="card-title font-weight-bold">
                                 {project.title}
                               </h5>
-                              <p class="card-text font-weight-bold">
+                              <p className="card-text font-weight-bold">
                                 {project.description}
                               </p>
                             </div>
-                            <div class="card-footer"></div>
+                            <div className="card-footer"></div>
                           </div>
                         </div>
                       </Flipped>
                     );
                   } else if (this.state.activeTab === project.catagory) {
                     return (
-                      <Flipped flipId="coolDiv" ease="easeOutExpo">
-                        <div class="col mb-5 mt-3">
-                          <div class="card h-100 ">
-                            <div class="overlay_container">
+                      <Flipped
+                        flipId="coolDiv"
+                        ease="easeOutExpo"
+                        kkey={uuid()}
+                      >
+                        <div className="col mb-5 mt-3">
+                          <div className="card h-100 ">
+                            <div className="overlay_container">
                               <img
                                 src={`./project/${project.img}`}
-                                class="card-img-top"
+                                className="card-img-top"
                                 alt="..."
                               />
-                              <div class="work_image_overlay">
-                                <div class="text">
+                              <div className="work_image_overlay">
+                                <div className="text">
                                   {project.link ? (
-                                    <a href={project.link} target="_blank">
+                                    <a
+                                      href={project.link}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                    >
                                       <button
                                         title="Live"
                                         type="button"
-                                        class="btn btn-light btn-lg mr-3"
+                                        className="btn btn-light btn-lg mr-3"
                                       >
                                         <FaLink />
                                       </button>
@@ -247,11 +264,15 @@ class MyWork extends React.Component {
                                     ""
                                   )}
 
-                                  <a href={project.gitLink} target="_blank">
+                                  <a
+                                    href={project.gitLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >
                                     <button
                                       title="GitHub"
                                       type="button"
-                                      class="btn btn-light btn-lg"
+                                      className="btn btn-light btn-lg"
                                     >
                                       <FaGithub />
                                     </button>
@@ -259,15 +280,15 @@ class MyWork extends React.Component {
                                 </div>
                               </div>
                             </div>
-                            <div class="card-body">
-                              <h5 class="card-title font-weight-bold">
+                            <div className="card-body">
+                              <h5 className="card-title font-weight-bold">
                                 {project.title}
                               </h5>
-                              <p class="card-text font-weight-bold">
+                              <p className="card-text font-weight-bold">
                                 {project.description}
                               </p>
                             </div>
-                            <div class="card-footer"></div>
+                            <div className="card-footer"></div>
                           </div>
                         </div>
                       </Flipped>

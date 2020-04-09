@@ -1,5 +1,5 @@
 import React from "react";
-import { Row } from "react-bootstrap";
+// import { Row } from "react-bootstrap";
 
 import Header from "./component/header";
 import Home from "./component/home";

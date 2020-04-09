@@ -1,18 +1,18 @@
 import React from "react";
-import {
-  Jumbotron,
-  Container,
-  ProgressBar,
-  Card,
-  CardDeck,
-} from "react-bootstrap";
+// import {
+//   Jumbotron,
+//   Container,
+//   ProgressBar,
+//   Card,
+//   CardDeck,
+// } from "react-bootstrap";
 
 const Skills = () => {
   return (
     <>
       {" "}
       {/* <Jumbotron> */}
-      <div className="container">
+      <div className="container" id="skills">
         <h2 className=" font-weight-bold">Skills</h2>
         <p className="font-weight-bold">
           The future belongs to those who Learn more skills and combine

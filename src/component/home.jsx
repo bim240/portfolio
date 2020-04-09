@@ -1,15 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Typical from "react-typical";
-import { Card, Container, Jumbotron } from "react-bootstrap";
+import { Card, Container } from "react-bootstrap";
 import { FaFacebook, FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
-
-import homeImage from "../assets/images/home.jpg";
 
 const Home = () => {
   return (
     <>
-      <section className="home_section parallex">
+      <section className="home_section parallex" id="home">
         <Card className="bg-dark text-white no_radius flex">
           <Card.ImgOverlay>
             <Container>
