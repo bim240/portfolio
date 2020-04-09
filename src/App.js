@@ -7,6 +7,7 @@ import AboutMe from "./component/aboutMe";
 import Skills from "./component/skills";
 import "./assets/stylesheets/style.css";
 import MyWork from "./component/myWork";
+import Article from "./component/article";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <AboutMe />
       <Skills />
       <MyWork />
+      <Article />
     </div>
   );
 }

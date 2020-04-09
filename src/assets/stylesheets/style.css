@@ -224,7 +224,8 @@ body::-webkit-scrollbar {
   margin: auto;
 }
 .overlay_container:hover .work_image_overlay {
-  opacity: 0.6;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.719);
 }
 .text {
   opacity: 1;
@@ -238,4 +239,11 @@ body::-webkit-scrollbar {
   transform: translate(-50%, -50%);
   text-align: center;
   cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.text button:hover {
+  background-color: black;
+  color: white;
+  transition: 500ms ease;
 }

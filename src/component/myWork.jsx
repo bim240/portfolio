@@ -21,8 +21,8 @@ class MyWork extends React.Component {
         {
           title: "TechEveryDay",
           description:
-            "This project was amied at those who dont know where to look for resources. This is a one point destination for them. We all know internet is a big mess",
-          link: "https://canvas2-357.netlify.com",
+            "This project was aimed for those who dont know where to look for resources. This is a one point destination for them. We all know internet is a big mess, its just a little help",
+          link: "https://techeveryday.codes",
           gitLink: "https://github.com/bim240/TechEveryday",
           img: "techeveryday.jpg",
           tag: ["HTML", "CSS"],
@@ -90,7 +90,7 @@ class MyWork extends React.Component {
         {
           title: "Alien face",
           description: "An alien face made with HTML & CSS",
-          link: "https://canvas2-357.netlify.com",
+          link: "https://alienface357.netlify.com",
           gitLink: "https://github.com/bim240/alienface",
           img: "alienface.jpg",
           tag: ["HTML", "CSS"],
@@ -184,6 +184,7 @@ class MyWork extends React.Component {
                                   {project.link ? (
                                     <a href={project.link} target="_blank">
                                       <button
+                                        title="Live"
                                         type="button"
                                         class="btn btn-light btn-lg mr-3"
                                       >
@@ -196,6 +197,7 @@ class MyWork extends React.Component {
 
                                   <a href={project.gitLink} target="_blank">
                                     <button
+                                      title="GitHub"
                                       type="button"
                                       class="btn btn-light btn-lg"
                                     >
@@ -234,6 +236,7 @@ class MyWork extends React.Component {
                                   {project.link ? (
                                     <a href={project.link} target="_blank">
                                       <button
+                                        title="Live"
                                         type="button"
                                         class="btn btn-light btn-lg mr-3"
                                       >
@@ -246,6 +249,7 @@ class MyWork extends React.Component {
 
                                   <a href={project.gitLink} target="_blank">
                                     <button
+                                      title="GitHub"
                                       type="button"
                                       class="btn btn-light btn-lg"
                                     >

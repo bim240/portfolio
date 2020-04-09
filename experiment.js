@@ -1,59 +1,50 @@
-var TxtRotate = function (el, toRotate, period) {
-  this.toRotate = toRotate;
-  this.el = el;
-  this.loopNum = 0;
-  this.period = parseInt(period, 10) || 2000;
-  this.txt = "";
-  this.tick();
-  this.isDeleting = false;
-};
-
-TxtRotate.prototype.tick = function () {
-  var i = this.loopNum % this.toRotate.length;
-  var fullTxt = this.toRotate[i];
-
-  if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
-  } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
-  }
-
-  this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
-
-  var that = this;
-  var delta = 300 - Math.random() * 100;
-
-  if (this.isDeleting) {
-    delta /= 2;
-  }
-
-  if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.period;
-    this.isDeleting = true;
-  } else if (this.isDeleting && this.txt === "") {
-    this.isDeleting = false;
-    this.loopNum++;
-    delta = 500;
-  }
-
-  setTimeout(function () {
-    that.tick();
-  }, delta);
-};
-
-window.onload = function () {
-  this.console.log("exp");
-  var elements = document.getElementsByClassName("txt-rotate");
-  for (var i = 0; i < elements.length; i++) {
-    var toRotate = elements[i].getAttribute("data-rotate");
-    var period = elements[i].getAttribute("data-period");
-    if (toRotate) {
-      new TxtRotate(elements[i], JSON.parse(toRotate), period);
-    }
-  }
-  // INJECT CSS
-  var css = document.createElement("style");
-  css.type = "text/css";
-  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
-  document.body.appendChild(css);
-};
+<div class="nav nav-tabs" id="nav-tab" role="tablist">
+  <a
+    onClick={() => this.handleFilter("all")}
+    class="nav-item nav-link text-reset font-weight-bold active"
+    id="nav-home-tab"
+    data-toggle="tab"
+    href="#nav-home"
+    role="tab"
+    aria-controls="nav-home"
+    aria-selected="true"
+  >
+    All
+  </a>
+  <a
+    onClick={() => this.handleFilter("react")}
+    class="nav-item nav-link text-reset font-weight-bold "
+    id="nav-home-tab"
+    data-toggle="tab"
+    href="#nav-home"
+    role="tab"
+    aria-controls="nav-home"
+    aria-selected="true"
+  >
+    React
+  </a>
+  <a
+    onClick={() => this.handleFilter("js")}
+    class="nav-item nav-link text-reset font-weight-bold"
+    id="nav-profile-tab"
+    data-toggle="tab"
+    href="#nav-profile"
+    role="tab"
+    aria-controls="nav-profile"
+    aria-selected="false"
+  >
+    JavaScript
+  </a>
+  <a
+    onClick={() => this.handleFilter("html")}
+    class="nav-item nav-link text-reset font-weight-bold"
+    id="nav-contact-tab"
+    data-toggle="tab"
+    href="#nav-contact"
+    role="tab"
+    aria-controls="nav-contact"
+    aria-selected="false"
+  >
+    HTML & CSS
+  </a>
+</div>;
