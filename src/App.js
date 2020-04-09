@@ -8,6 +8,7 @@ import Skills from "./component/skills";
 import "./assets/stylesheets/style.css";
 import MyWork from "./component/myWork";
 import Article from "./component/article";
+import Contact from "./component/contact";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Skills />
       <MyWork />
       <Article />
+      <Contact />
     </div>
   );
 }
