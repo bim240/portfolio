@@ -20,22 +20,22 @@ const Header = () => {
 
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ml-auto h4_heading">
-              <Nav.Link className="mr-2" href="#home">
+              <Nav.Link className="mr-2 nav-link" href="#home">
                 Home
               </Nav.Link>
-              <Nav.Link className="mr-2" href="#aboutme">
+              <Nav.Link className="mr-2 nav-link" href="#aboutme">
                 About Me
               </Nav.Link>
-              <Nav.Link className="mr-2" href="#skills">
+              <Nav.Link className="mr-2 nav-link" href="#skills">
                 Skills
               </Nav.Link>
-              <Nav.Link className="mr-2" href="#mywork">
+              <Nav.Link className="mr-2 nav-link" href="#mywork">
                 My Work
               </Nav.Link>
-              <Nav.Link className="mr-2" href="#articles">
+              <Nav.Link className="mr-2 nav-link" href="#articles">
                 Blog
               </Nav.Link>
-              <Nav.Link className="mr-2" href="#contacts">
+              <Nav.Link className="mr-2 nav-link" href="#contacts">
                 Contacts
               </Nav.Link>
             </Nav>
