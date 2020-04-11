@@ -6,9 +6,9 @@ class Contact extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      email: null,
-      name: null,
-      message: "Write your messgae",
+      email: "",
+      name: "",
+      message: "Write your message",
     };
     this.serviceID = "default_service";
     this.templateID = "template_cXg54dbe";
@@ -28,7 +28,12 @@ class Contact extends React.Component {
       email: this.state.email,
       message: this.state.message,
     };
-    console.log(messageFormat, "messgae fprmat");
+    this.setState({
+      email: "",
+      name: "",
+      message: "Write your message",
+    });
+    console.log(messageFormat, "message fprmat");
     emailjs
       .send(this.serviceID, this.templateID, messageFormat, this.clientID)
       .then(
@@ -53,45 +58,50 @@ class Contact extends React.Component {
               width: "400px",
             }}
           >
-            <div class="form-group">
-              <label for="name" class="font-weight-bold">
+            <div className="form-group">
+              <label for="name" className="font-weight-bold">
                 Your Name
               </label>
               <input
                 onChange={(e) => this.handleInput({ name: e.target.value })}
+                value={this.state.name}
                 type="text"
-                class="form-control font-weight-bold"
+                className="form-control "
                 id="name"
               />
             </div>
-            <div class="form-group">
-              <label for="email" class="font-weight-bold">
+            <div className="form-group">
+              <label for="email" className="font-weight-bold">
                 Email address
               </label>
               <input
                 onChange={(e) => this.handleInput({ email: e.target.value })}
+                value={this.state.email}
                 type="email"
-                class="form-control font-weight-bold"
+                className="form-control "
                 id="email"
                 aria-describedby="emailHelp"
               />
-              <small id="emailHelp" class="form-text text-muted">
+              <small id="emailHelp" className="form-text text-muted">
                 We'll never share your email with anyone else.
               </small>
             </div>
-            <div class="form-group">
-              <label for="message">Write your message</label>
+            <div className="form-group">
+              <label className="font-weight-bold" for="message">
+                Write your message
+              </label>
               <textarea
                 value={this.state.message}
                 onChange={(e) => this.handleInput({ message: e.target.value })}
-                class="form-control"
+                className="form-control"
                 id="message"
+                placeholder="Write your message"
               ></textarea>
             </div>
             <button
               onClick={this.handlesubmit}
               type="submit"
-              class="btn btn-dark font-weight-bold "
+              className="btn btn-dark font-weight-bold "
               style={{ padding: "8px 30px" }}
             >
               Send
