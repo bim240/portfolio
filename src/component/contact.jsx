@@ -23,27 +23,35 @@ class Contact extends React.Component {
 
   handlesubmit = (e) => {
     e.preventDefault();
-    let messageFormat = {
-      name: this.state.name,
-      email: this.state.email,
-      message: this.state.message,
-    };
-    this.setState({
-      email: "",
-      name: "",
-      message: "Write your message",
-    });
-    console.log(messageFormat, "message fprmat");
-    emailjs
-      .send(this.serviceID, this.templateID, messageFormat, this.clientID)
-      .then(
-        (response) => {
-          console.log("SUCCESS!", response.status, response.text);
-        },
-        (err) => {
-          console.log("FAILED...", err);
-        }
-      );
+    if (
+      this.state.name == "" &&
+      this.state.email == "" &&
+      this.state.message == "Write your message"
+    ) {
+      alert("Fileds can't be empty");
+    } else {
+      let messageFormat = {
+        name: this.state.name,
+        email: this.state.email,
+        message: this.state.message,
+      };
+      this.setState({
+        email: "",
+        name: "",
+        message: "Write your message",
+      });
+      console.log(messageFormat, "message fprmat");
+      emailjs
+        .send(this.serviceID, this.templateID, messageFormat, this.clientID)
+        .then(
+          (response) => {
+            console.log("SUCCESS!", response.status, response.text);
+          },
+          (err) => {
+            console.log("FAILED...", err);
+          }
+        );
+    }
   };
   render() {
     // console.log(process.env.REACT_APP_USERID, "env varible");
