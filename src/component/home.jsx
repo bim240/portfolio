@@ -14,7 +14,7 @@ const Home = () => {
             <Card.ImgOverlay>
               <Container>
                 <Card.Title className="margin_top">
-                  <h1 className="font-weight-bold  " key="1">
+                  <h1 className="font-weight-bold " key="1">
                     I'm Bimlendu
                   </h1>
                 </Card.Title>
@@ -85,7 +85,6 @@ const Home = () => {
               </Container>
             </Card.ImgOverlay>
           </Card>
-          ;
         </section>
       </QueueAnim>
     </>

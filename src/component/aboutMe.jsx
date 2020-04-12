@@ -26,8 +26,8 @@ const AboutMe = () => {
               <div className="col m-3 alert-link">
                 {" "}
                 <FaGlobeAsia className="mr-2" />
-                <a href="https://www.bimlendu.me/">
-                  Website : www.bimlendu.me
+                Website : <a href="https://www.bimlendu.me/">
+                  www.bimlendu.me
                 </a>{" "}
               </div>
               <div className="col m-3 font-weight-bold">
