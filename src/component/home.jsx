@@ -3,7 +3,7 @@ import QueueAnim from "rc-queue-anim";
 // import { Link } from "react-router-dom";
 import Typical from "react-typical";
 import { Card, Container } from "react-bootstrap";
-import { FaFacebook, FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaTwitter, FaGithub, FaLinkedin, FaLaptopCode } from "react-icons/fa";
 
 const Home = () => {
   return (
@@ -45,14 +45,16 @@ const Home = () => {
                 </Card.Text>
                 <div className="mt-4" key="5">
                   <a
+                    title="CodeWars"
                     className="link_icon mr-3"
-                    href="https://www.facebook.com/bim240"
+                    href="https://www.codewars.com/users/bim240"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <FaFacebook />
+                    <FaLaptopCode />
                   </a>
                   <a
+                    title="Twitter"
                     className="link_icon mr-3"
                     href="https://twitter.com/bim240"
                     target="_blank"
@@ -62,6 +64,7 @@ const Home = () => {
                     <FaTwitter />
                   </a>
                   <a
+                    title="GitHub"
                     className="link_icon mr-3"
                     href="https://github.com/bim240"
                     target="_blank"
@@ -70,6 +73,7 @@ const Home = () => {
                     <FaGithub />
                   </a>
                   <a
+                    title="LinkedIn"
                     className="link_icon mr-3"
                     href="https://www.linkedin.com/in/bim240/"
                     target="_blank"

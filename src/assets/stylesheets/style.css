@@ -26,8 +26,13 @@ body::-webkit-scrollbar {
   text-decoration: none;
   color: white;
   font-size: 25px;
+  transition: all 400ms;
 }
-
+.link_icon:hover {
+  /* background-color: black; */
+  color: black;
+  transition: all 400ms;
+}
 /* .margin_top {
   margin-top: 1rem;
 } */
@@ -247,3 +252,9 @@ body::-webkit-scrollbar {
   color: white;
   transition: 500ms ease;
 }
+
+/* a:hover {
+  background-color: black;
+  color: white;
+  transition: all 200ms;
+} */

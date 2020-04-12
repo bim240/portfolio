@@ -21,12 +21,14 @@ const AboutMe = () => {
               <div className="col m-3 font-weight-bold">
                 {" "}
                 <FaBirthdayCake className="mr-2" />
-                Birthday : 23 Febuary 1996
+                Birthday : 23 Febuary
               </div>
               <div className="col m-3 alert-link">
                 {" "}
                 <FaGlobeAsia className="mr-2" />
-                <a href="https://www.bimlendu.me/"> www.bimlendu.me</a>{" "}
+                <a href="https://www.bimlendu.me/">
+                  Website : www.bimlendu.me
+                </a>{" "}
               </div>
               <div className="col m-3 font-weight-bold">
                 {" "}
@@ -38,11 +40,11 @@ const AboutMe = () => {
                 <FaCity className="mr-2" />
                 City : Dharamshala, INDIA
               </div>
-              <div className="col m-3 font-weight-bold">
+              {/* <div className="col m-3 font-weight-bold">
                 <button type="button" className="btn btn-dark m-3">
                   Download CV
                 </button>
-              </div>
+              </div> */}
             </div>
             {/* columan 2 */}
             <div class="col">
@@ -67,11 +69,11 @@ const AboutMe = () => {
                 <GiFreedomDove className="mr-2" />
                 Freelance : Available
               </div>
-              <div className="col m-3 font-weight-bold">
+              {/* <div className="col m-3 font-weight-bold">
                 <button type="button" className="btn btn-dark m-3">
                   Message Me
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
         </Container>
