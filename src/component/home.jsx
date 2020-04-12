@@ -19,7 +19,7 @@ const Home = () => {
                   </h1>
                 </Card.Title>
                 <Card.Text>
-                  <h3 key="2">
+                  <h4 key="2">
                     I'm a{" "}
                     <Typical
                       steps={[
@@ -35,7 +35,7 @@ const Home = () => {
                       loop={Infinity}
                       wrapper="b"
                     />{" "}
-                  </h3>
+                  </h4>
                 </Card.Text>
                 <Card.Text ket="3">
                   A profession that completely matches your talent, aspirations
