@@ -92,7 +92,8 @@ class MyWork extends React.Component {
         },
         {
           title: "Alien face",
-          description: "An alien face made with HTML & CSS.",
+          description:
+            "An alien face made with HTML & CSS. Its really cool and funny",
           link: "https://alienface357.netlify.com",
           gitLink: "https://github.com/bim240/alienface",
           img: "alienface.jpg",
