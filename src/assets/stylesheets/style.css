@@ -2,7 +2,7 @@ body {
   background-color: #e9ecef;
 }
 body::-webkit-scrollbar {
-  display: none; /* Safari and Chrome */
+  display: none;
 }
 
 .h4_heading {

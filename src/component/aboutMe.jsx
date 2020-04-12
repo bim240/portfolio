@@ -11,12 +11,12 @@ const AboutMe = () => {
     <>
       {" "}
       <Jumbotron id="aboutme">
-        <Container fluid="md">
+        <Container>
           <h2 className=" font-weight-bold">About Me</h2>
           <h5 className="font-weight-bold heading-3">
             Hello I'm Bimlendu Kumar
           </h5>
-          <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 mt-4">
+          <div class="row  row-cols-sm-1 row-cols-md-2 mt-4">
             <div class="col">
               <div className="col m-3 font-weight-bold">
                 {" "}

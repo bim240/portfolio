@@ -63,7 +63,7 @@ class Contact extends React.Component {
           <form
             className="mx-auto"
             style={{
-              width: "400px",
+              width: "300px",
             }}
           >
             <div className="form-group">
