@@ -13,7 +13,7 @@ import Footer from "./component/footer";
 
 function App() {
   return (
-    <div>
+    <div style={{ overflow: "hidden" }}>
       <Header />
       <Home />
       <AboutMe />
