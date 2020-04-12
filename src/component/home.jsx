@@ -15,7 +15,7 @@ const Home = () => {
               <Container>
                 <Card.Title className="margin_top">
                   <h1 className="font-weight-bold  " key="1">
-                    I'M Bimlendu
+                    I'm Bimlendu
                   </h1>
                 </Card.Title>
                 <Card.Text>

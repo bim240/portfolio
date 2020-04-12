@@ -24,8 +24,8 @@ class Contact extends React.Component {
   handlesubmit = (e) => {
     e.preventDefault();
     if (
-      this.state.name == "" &&
-      this.state.email == "" &&
+      this.state.name == "" ||
+      this.state.email == "" ||
       this.state.message == "Write your message"
     ) {
       alert("Fileds can't be empty");
