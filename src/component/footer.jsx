@@ -46,9 +46,9 @@ const Footer = () => {
           </a>
         </div>
         <div
-          className="font-weight-bold mx-auto text-center mt-2"
+          className="font-weight-bold mx-auto  mt-2"
           style={{
-            width: "400px",
+            width: "200px",
             color: "white",
           }}
         >
