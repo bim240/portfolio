@@ -45,9 +45,11 @@ class Contact extends React.Component {
         .send(this.serviceID, this.templateID, messageFormat, this.clientID)
         .then(
           (response) => {
+            alert("Message sent");
             console.log("SUCCESS!", response.status, response.text);
           },
           (err) => {
+            alert("Network error");
             console.log("FAILED...", err);
           }
         );
