@@ -8,12 +8,12 @@ class Article extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      collapse: true,
+      collapse: false,
       allProjects: [
         {
           title: "JWT Authentication",
           description:
-            "This project was made for a better understanding of React internal and its working",
+            "Before we get into action, there are few things you need to know and they are not fancy, you can google them. Even if you don't know them I will do my best to make it easy for you.",
           link: null,
           mediumLink:
             "https://medium.com/@bim240/jwt-authentication-fe47f8993461",
@@ -24,7 +24,7 @@ class Article extends React.Component {
         {
           title: "DOM (Document Object Model)",
           description:
-            "This project was aimed for those who dont know where to look for resources. This is a one point destination for them. We all know internet is a big mess, its just a little help",
+            "The Document Object Model (DOM) connects web pages to scripts or programming languages by representing the structure of a document — such as the HTML representing a web page — in memory.",
           link: null,
           mediumLink:
             "https://medium.com/@bim240/dom-document-object-model-8e12d6f47c1e",
@@ -35,7 +35,7 @@ class Article extends React.Component {
         {
           title: "Variables in js",
           description:
-            "This project has neumorphic design which gives a real life interaction feel ",
+            "In general, a variable represents a concept or an item whose magnitude can be represented by a number, i.e. measured quantitatively. Variables are called variables because they vary, i.e. they can have a variety of values",
           link: null,
           mediumLink: "https://medium.com/@bim240/variables-in-js-bc5fcb46e640",
           img: "variable.png",
@@ -67,7 +67,7 @@ class Article extends React.Component {
         {
           title: "Flexbox",
           description:
-            "As the heading suggests we will be learning about flexbox today. We will go in-depth today. It will be better if we code as we move ahead in flexbox and actually see what each piece of code does.",
+            "As the heading suggests we will be learning about flexbox today. We will go in-depth today. It will be better if you code as we move ahead in flexbox and actually see what each piece of code does.",
           link: null,
           mediumLink:
             "https://medium.com/@bim240/flexbox-altcampus-a9627fab44ff",
@@ -223,7 +223,13 @@ class Article extends React.Component {
                       );
                     } else
                       return (
-                        <div className="collapse" id="collapse" key={uuid()}>
+                        <div
+                          className={`collapse ${
+                            this.state.collapse ? "show" : ""
+                          }`}
+                          id="collapse"
+                          key={uuid()}
+                        >
                           <Flipped flipId="coolDiv" ease="easeOutExpo">
                             <div className="col mb-5 mt-3">
                               <div className="card h-100 ">
@@ -298,15 +304,20 @@ class Article extends React.Component {
             {/* all articles*/}
             {/* collapse */}
             <a
-              className="btn btn-dark font-weight-bold ml-5 mr-5 mb-5"
+              className={`btn btn-dark font-weight-bold ml-5 mr-5 mb-5 ${
+                this.state.collapse ? "" : "collapsed"
+              }`}
               data-toggle="collapse"
               href="#collapse"
               role="button"
-              aria-expanded="false"
+              aria-expanded={this.state.collapse}
               aria-controls="collapseExample"
+              onClick={() => {
+                this.setState({ collapse: !this.state.collapse });
+              }}
             >
               {" "}
-              {this.state.collapse ? "Show All" : "Hide"}
+              {!this.state.collapse ? "Show All" : "Hide"}
             </a>
           </div>
         </>{" "}
