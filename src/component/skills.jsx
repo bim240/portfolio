@@ -31,7 +31,7 @@ const Skills = () => {
               <span className="progress-right">
                 <span className="progress-bar"></span>
               </span>
-              <div className="progress-value">90%</div>
+              <div className="progress-value"></div>
             </div>
             <h5 className="font-weight-bold text-center mt-3">HTML & CSS</h5>
           </div>
@@ -44,7 +44,7 @@ const Skills = () => {
               <span className="progress-right">
                 <span className="progress-bar"></span>
               </span>
-              <div className="progress-value">90%</div>
+              <div className="progress-value"></div>
             </div>
             <h5 className="font-weight-bold text-center mt-3">JavaScript</h5>
           </div>
@@ -57,7 +57,7 @@ const Skills = () => {
               <span className="progress-right">
                 <span className="progress-bar"></span>
               </span>
-              <div className="progress-value">75%</div>
+              <div className="progress-value"></div>
             </div>
             <h5 className="font-weight-bold text-center mt-3">MongoDB</h5>
           </div>
@@ -70,7 +70,7 @@ const Skills = () => {
               <span className="progress-right">
                 <span className="progress-bar"></span>
               </span>
-              <div className="progress-value">75%</div>
+              <div className="progress-value"></div>
             </div>
             <h5 className="font-weight-bold text-center mt-3">Node/Express</h5>
           </div>
@@ -83,7 +83,7 @@ const Skills = () => {
               <span className="progress-right">
                 <span className="progress-bar"></span>
               </span>
-              <div className="progress-value">75%</div>
+              <div className="progress-value"></div>
             </div>
             <h5 className="font-weight-bold text-center mt-3">React</h5>
           </div>
@@ -96,7 +96,7 @@ const Skills = () => {
               <span className="progress-right">
                 <span className="progress-bar"></span>
               </span>
-              <div className="progress-value">75%</div>
+              <div className="progress-value"></div>
             </div>
             <h5 className="font-weight-bold text-center mt-3">Bootstrap</h5>
           </div>
