@@ -16,8 +16,8 @@ const AboutMe = () => {
           <h5 className="font-weight-bold heading-3">
             Hello I'm Bimlendu Kumar
           </h5>
-          <div class="row  row-cols-sm-1 row-cols-md-2 mt-4">
-            <div class="col">
+          <div className="row  row-cols-sm-1 row-cols-md-2 mt-4">
+            <div className="col">
               <div className="col m-3 font-weight-bold">
                 {" "}
                 <FaBirthdayCake className="mr-2" />
@@ -47,7 +47,7 @@ const AboutMe = () => {
               </div> */}
             </div>
             {/* columan 2 */}
-            <div class="col">
+            <div className="col">
               {" "}
               <div className="col m-3 font-weight-bold">
                 {" "}

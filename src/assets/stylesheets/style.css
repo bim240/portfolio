@@ -259,3 +259,9 @@ body::-webkit-scrollbar {
   color: white;
   transition: all 200ms;
 } */
+
+@media (max-width: 575.98px) {
+  #contact {
+    max-width: 90%;
+  }
+}

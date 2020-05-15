@@ -24,9 +24,9 @@ class Contact extends React.Component {
   handlesubmit = (e) => {
     e.preventDefault();
     if (
-      this.state.name == "" ||
-      this.state.email == "" ||
-      this.state.message == "Write your message"
+      this.state.name === "" ||
+      this.state.email === "" ||
+      this.state.message === "Write your message"
     ) {
       alert("Fileds can't be empty");
     } else {
@@ -69,7 +69,7 @@ class Contact extends React.Component {
             }}
           >
             <div className="form-group">
-              <label for="name" className="font-weight-bold">
+              <label htmlFor="name" className="font-weight-bold">
                 Your Name
               </label>
               <input
@@ -81,7 +81,7 @@ class Contact extends React.Component {
               />
             </div>
             <div className="form-group">
-              <label for="email" className="font-weight-bold">
+              <label htmlFor="email" className="font-weight-bold">
                 Email address
               </label>
               <input
@@ -97,7 +97,7 @@ class Contact extends React.Component {
               </small>
             </div>
             <div className="form-group">
-              <label className="font-weight-bold" for="message">
+              <label className="font-weight-bold" htmlFor="message">
                 Write your message
               </label>
               <textarea

@@ -120,7 +120,7 @@ class MyWork extends React.Component {
           <div className="nav nav-tabs" id="nav-tab" role="tablist">
             <a
               onClick={() => this.handleFilter("all")}
-              class="nav-item nav-link text-reset font-weight-bold active"
+              className="nav-item nav-link text-reset font-weight-bold active"
               id="nav-home-tab"
               data-toggle="tab"
               href="#nav-home"
@@ -132,7 +132,7 @@ class MyWork extends React.Component {
             </a>
             <a
               onClick={() => this.handleFilter("react")}
-              class="nav-item nav-link text-reset font-weight-bold "
+              className="nav-item nav-link text-reset font-weight-bold "
               id="nav-home-tab"
               data-toggle="tab"
               href="#nav-home"
@@ -144,7 +144,7 @@ class MyWork extends React.Component {
             </a>
             <a
               onClick={() => this.handleFilter("js")}
-              class="nav-item nav-link text-reset font-weight-bold"
+              className="nav-item nav-link text-reset font-weight-bold"
               id="nav-profile-tab"
               data-toggle="tab"
               href="#nav-profile"
@@ -156,7 +156,7 @@ class MyWork extends React.Component {
             </a>
             <a
               onClick={() => this.handleFilter("html")}
-              class="nav-item nav-link text-reset font-weight-bold"
+              className="nav-item nav-link text-reset font-weight-bold"
               id="nav-contact-tab"
               data-toggle="tab"
               href="#nav-contact"
