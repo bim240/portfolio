@@ -1,6 +1,6 @@
 import React from "react";
 import { v4 as uuid } from "uuid";
-import { FaHtml5, FaNodeJs, FaReact, FaBootstrap } from "react-icons/fa";
+import { FaHtml5, FaNode, FaReact, FaBootstrap } from "react-icons/fa";
 import { DiMongodb, DiJavascript1 } from "react-icons/di";
 
 const Skills = () => {
@@ -8,7 +8,7 @@ const Skills = () => {
     { icon: <FaHtml5 />, name: " HTML & CSS" },
     { icon: <DiJavascript1 />, name: "JavaScript" },
     { icon: <DiMongodb />, name: "MongoDB" },
-    { icon: <FaNodeJs />, name: "Node/Express" },
+    { icon: <FaNode />, name: "Node/Express" },
     { icon: <FaReact />, name: "React" },
     { icon: <FaBootstrap />, name: "Bootstrap" },
   ];
