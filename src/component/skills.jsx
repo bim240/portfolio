@@ -1,13 +1,17 @@
 import React from "react";
-// import {
-//   Jumbotron,
-//   Container,
-//   ProgressBar,
-//   Card,
-//   CardDeck,
-// } from "react-bootstrap";
+import { v4 as uuid } from "uuid";
+import { FaHtml5, FaNodeJs, FaReact, FaBootstrap } from "react-icons/fa";
+import { DiMongodb, DiJavascript1 } from "react-icons/di";
 
 const Skills = () => {
+  let skills = [
+    { icon: <FaHtml5 />, name: " HTML & CSS" },
+    { icon: <DiJavascript1 />, name: "JavaScript" },
+    { icon: <DiMongodb />, name: "MongoDB" },
+    { icon: <FaNodeJs />, name: "Node/Express" },
+    { icon: <FaReact />, name: "React" },
+    { icon: <FaBootstrap />, name: "Bootstrap" },
+  ];
   return (
     <>
       {" "}
@@ -20,86 +24,21 @@ const Skills = () => {
         </p>
         <div className="row mt-5">
           {/* html css */}
-          <div
-            className="col-md-3 col-sm-6 mb-5"
-            // style={{ border: "1px solid green" }}
-          >
-            <div className="progress blue">
-              <span className="progress-left">
-                <span className="progress-bar"></span>
-              </span>
-              <span className="progress-right">
-                <span className="progress-bar"></span>
-              </span>
-              <div className="progress-value"></div>
-            </div>
-            <h5 className="font-weight-bold text-center mt-3">HTML & CSS</h5>
-          </div>
-          {/* js */}
-          <div className="col-md-3 col-sm-6 mb-5">
-            <div className="progress yellow">
-              <span className="progress-left">
-                <span className="progress-bar"></span>
-              </span>
-              <span className="progress-right">
-                <span className="progress-bar"></span>
-              </span>
-              <div className="progress-value"></div>
-            </div>
-            <h5 className="font-weight-bold text-center mt-3">JavaScript</h5>
-          </div>
-          {/* mongodb */}
-          <div className="col-md-3 col-sm-6 mb-5">
-            <div className="progress pink">
-              <span className="progress-left">
-                <span className="progress-bar"></span>
-              </span>
-              <span className="progress-right">
-                <span className="progress-bar"></span>
-              </span>
-              <div className="progress-value"></div>
-            </div>
-            <h5 className="font-weight-bold text-center mt-3">MongoDB</h5>
-          </div>
-          {/*  node express*/}
-          <div className="col-md-3 col-sm-6 mb-5">
-            <div className="progress green">
-              <span className="progress-left">
-                <span className="progress-bar"></span>
-              </span>
-              <span className="progress-right">
-                <span className="progress-bar"></span>
-              </span>
-              <div className="progress-value"></div>
-            </div>
-            <h5 className="font-weight-bold text-center mt-3">Node/Express</h5>
-          </div>
-          {/* react / react-redux */}
-          <div className="col-md-3 col-sm-6 mb-5">
-            <div className="progress red">
-              <span className="progress-left">
-                <span className="progress-bar"></span>
-              </span>
-              <span className="progress-right">
-                <span className="progress-bar"></span>
-              </span>
-              <div className="progress-value"></div>
-            </div>
-            <h5 className="font-weight-bold text-center mt-3">React</h5>
-          </div>
-          {/* bootstrap */}
-          <div className="col-md-3 col-sm-6 mb-5">
-            <div className="progress greenyellow">
-              <span className="progress-left">
-                <span className="progress-bar"></span>
-              </span>
-              <span className="progress-right">
-                <span className="progress-bar"></span>
-              </span>
-              <div className="progress-value"></div>
-            </div>
-            <h5 className="font-weight-bold text-center mt-3">Bootstrap</h5>
-          </div>
+          {skills.map((skill) => {
+            return (
+              <div className="col-md-3 col-sm-6 mb-5" key={uuid()}>
+                <div
+                  className="mx-auto"
+                  style={{ textAlign: "center", fontSize: "4rem" }}
+                >
+                  {skill.icon}
+                </div>
+                <h5 className="font-weight-bold text-center mt-3">
+                  {skill.name}
+                </h5>
+              </div>
+            );
+          })}
         </div>
       </div>
       {/* </Jumbotron> */}
