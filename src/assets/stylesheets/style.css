@@ -92,6 +92,10 @@ body::-webkit-scrollbar {
   max-height: 180px !important;
   margin: 5px 0;
 }
+.article_svg_responsive {
+  max-height: 180px !important;
+  margin: 5px 0;
+}
 /* a:hover {
   background-color: black;
   color: white;
