@@ -1,5 +1,5 @@
 body {
-  background-color: #e9ecef;
+  background-color: #f0f0f0;
 }
 body::-webkit-scrollbar {
   display: none;
@@ -88,6 +88,10 @@ body::-webkit-scrollbar {
   transition: 500ms ease;
 }
 
+.work_svg_responsive {
+  max-height: 180px !important;
+  margin: 5px 0;
+}
 /* a:hover {
   background-color: black;
   color: white;
@@ -98,4 +102,8 @@ body::-webkit-scrollbar {
   #contact {
     max-width: 90%;
   }
+}
+/* color codes */
+.color {
+  background-color: #2951a1;
 }

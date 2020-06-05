@@ -1,4 +1,5 @@
 import React from "react";
+// import { Link } from "react-router-dom";
 import { v4 as uuid } from "uuid";
 import { FaHtml5, FaNode, FaReact, FaBootstrap } from "react-icons/fa";
 import { DiMongodb, DiJavascript1 } from "react-icons/di";
@@ -17,7 +18,9 @@ const Skills = () => {
       {" "}
       {/* <Jumbotron> */}
       <div className="container" id="skills">
+        {/* <Link> */}
         <h2 className=" font-weight-bold">Skills</h2>
+        {/* </Link> */}
         <p className="font-weight-bold">
           The future belongs to those who Learn more skills and combine
           <br /> them in creative ways.
@@ -29,7 +32,10 @@ const Skills = () => {
               <div className="col-md-3 col-sm-6 mb-5" key={uuid()}>
                 <div
                   className="mx-auto"
-                  style={{ textAlign: "center", fontSize: "4rem" }}
+                  style={{
+                    textAlign: "center",
+                    fontSize: "4rem",
+                  }}
                 >
                   {skill.icon}
                 </div>

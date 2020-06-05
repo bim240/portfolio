@@ -3,104 +3,14 @@ import { v4 as uuid } from "uuid";
 import { Flipper, Flipped } from "react-flip-toolkit";
 import { FaLink, FaGithub } from "react-icons/fa";
 
+import { workData } from "../assets/data/workdata";
+
 class MyWork extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       activeTab: "all",
-      allProjects: [
-        {
-          title: "Mini React",
-          description:
-            "This project was made for a better understanding of React internal and its working.",
-          link: null,
-          gitLink: "https://github.com/bim240/mini-react",
-          img: "react.png",
-          tag: ["React"],
-          catagory: "react",
-        },
-        {
-          title: "TechEveryDay",
-          description:
-            "This project was aimed for those who dont know where to look for resources. This is a one point destination for them. We all know internet is a big mess, its a little help for beginner.",
-          link: "https://techeveryday.codes",
-          gitLink: "https://github.com/bim240/TechEveryday",
-          img: "techeveryday.jpg",
-          tag: ["HTML", "CSS"],
-          catagory: "html",
-        },
-        {
-          title: "Medium Clone",
-          description:
-            "This project has neumorphic design which gives a real life interaction feel. This is a replica of real life conduit app example(not responsive).",
-          link: "https://medium-clone357.netlify.com",
-          gitLink: "https://github.com/bim240/medium-clone",
-          img: "medium.jpg",
-          tag: ["React"],
-          catagory: "react",
-        },
-        {
-          title: "Paint",
-          description:
-            "A project aimed at learning to draw different shapes in react just like we used to do in paint. For now one can only draw few shapes but will continue to add more features.",
-          link: "https://paint357.netlify.com",
-          gitLink: "https://github.com/bim240/paint",
-          img: "paint.jpg",
-          tag: ["React"],
-          catagory: "react",
-        },
-
-        {
-          title: "Bookly",
-          description:
-            "A project made to keep track of all the books one is reading.",
-          link: "https://bookly357.netlify.com",
-          gitLink: "https://github.com/bim240/bookly",
-          img: "bookly.jpg",
-          tag: ["JavaScript"],
-          catagory: "js",
-        },
-        {
-          title: "Todo",
-          description:
-            "A project aimed for better understanding of vanillia js and how DOM manupulation works.",
-          link: "https://todo357.netlify.com",
-          gitLink: "https://github.com/bim240/todos",
-          img: "todo.jpg",
-          tag: ["JavaScript"],
-          catagory: "js",
-        },
-        {
-          title: "Canvas 1",
-          description:
-            "A project aimed for better understanding of Canvas. Creating path for different particles and there motion.",
-          link: "https://canvas1-357.netlify.com",
-          gitLink: "https://github.com/bim240/canvasproject1",
-          img: "canvas1.jpg",
-          tag: ["JavaScript"],
-          catagory: "js",
-        },
-        {
-          title: "Canvas 2",
-          description:
-            "A project aimed for better understanding of Canvas. Creating path for different particles and there motion.",
-          link: "https://canvas2-357.netlify.com",
-          img: "canvas2.jpg",
-          tag: ["JavaScript"],
-          gitLink: "https://github.com/bim240/canvasproject3",
-          catagory: "js",
-        },
-        {
-          title: "Alien face",
-          description:
-            "An alien face made with HTML & CSS. Its really cool and funny",
-          link: "https://alienface357.netlify.com",
-          gitLink: "https://github.com/bim240/alienface",
-          img: "alienface.jpg",
-          tag: ["HTML", "CSS"],
-          catagory: "html",
-        },
-      ],
+      allProjects: workData,
     };
   }
   handleFilter = (key) => {
@@ -169,18 +79,21 @@ class MyWork extends React.Component {
           </div>
           <Flipper flipKey={this.state.activeTab}>
             <div className="card-groups">
-              <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+              <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4">
                 {/* <Shuffle> */}
                 {this.state.allProjects.map((project) => {
                   if (this.state.activeTab === "all") {
                     return (
                       <Flipped flipId="coolDiv" ease="easeOutExpo" key={uuid()}>
                         <div className="col mb-5 mt-3">
-                          <div className="card h-100 ">
-                            <div className="overlay_container">
+                          <div
+                            className="card h-100 border-0 shadow"
+                            style={{ backgroundColor: "#e6e6e6" }}
+                          >
+                            <div className="overlay_container ">
                               <img
                                 src={`./project/${project.img}`}
-                                className="card-img-top"
+                                className="card-img-top work_svg_responsive"
                                 alt="..."
                               />
                               <div className="work_image_overlay">
@@ -227,7 +140,6 @@ class MyWork extends React.Component {
                                 {project.description}
                               </p>
                             </div>
-                            <div className="card-footer"></div>
                           </div>
                         </div>
                       </Flipped>
@@ -240,11 +152,14 @@ class MyWork extends React.Component {
                         kkey={uuid()}
                       >
                         <div className="col mb-5 mt-3">
-                          <div className="card h-100 ">
-                            <div className="overlay_container">
+                          <div
+                            className="card h-100 border-0 shadow "
+                            style={{ backgroundColor: "#e6e6e6" }}
+                          >
+                            <div className="overlay_container ">
                               <img
                                 src={`./project/${project.img}`}
-                                className="card-img-top"
+                                className="card-img-top work_svg_responsive "
                                 alt="..."
                               />
                               <div className="work_image_overlay">
@@ -291,7 +206,6 @@ class MyWork extends React.Component {
                                 {project.description}
                               </p>
                             </div>
-                            <div className="card-footer"></div>
                           </div>
                         </div>
                       </Flipped>
