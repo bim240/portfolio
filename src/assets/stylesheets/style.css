@@ -96,6 +96,12 @@ body::-webkit-scrollbar {
   max-height: 180px !important;
   margin: 5px 0;
 }
+.card_background {
+  background-color: #eceaea;
+}
+.aboutme_section {
+  background-color: #f0f0f0;
+}
 /* a:hover {
   background-color: black;
   color: white;

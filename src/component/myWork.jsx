@@ -86,17 +86,14 @@ class MyWork extends React.Component {
                     return (
                       <Flipped flipId="coolDiv" ease="easeOutExpo" key={uuid()}>
                         <div className="col mb-5 mt-3">
-                          <div
-                            className="card h-100 border-0 shadow"
-                            style={{ backgroundColor: "#e6e6e6" }}
-                          >
-                            <div className="overlay_container ">
+                          <div className="card h-100 border-0 shadow card_background rounded">
+                            <div className="overlay_container rounded">
                               <img
                                 src={`./project/${project.img}`}
-                                className="card-img-top work_svg_responsive"
+                                className="card-img-top work_svg_responsive rounded"
                                 alt="..."
                               />
-                              <div className="work_image_overlay">
+                              <div className="work_image_overlay rounded">
                                 <div className="text">
                                   {project.link ? (
                                     <a
@@ -152,17 +149,14 @@ class MyWork extends React.Component {
                         kkey={uuid()}
                       >
                         <div className="col mb-5 mt-3">
-                          <div
-                            className="card h-100 border-0 shadow "
-                            style={{ backgroundColor: "#e6e6e6" }}
-                          >
-                            <div className="overlay_container ">
+                          <div className="card h-100 border-0 shadow card_background rounded">
+                            <div className="overlay_container rounded  ">
                               <img
                                 src={`./project/${project.img}`}
-                                className="card-img-top work_svg_responsive "
+                                className="card-img-top work_svg_responsive rounded "
                                 alt="..."
                               />
-                              <div className="work_image_overlay">
+                              <div className="work_image_overlay rounded">
                                 <div className="text">
                                   {project.link ? (
                                     <a

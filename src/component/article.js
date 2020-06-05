@@ -40,18 +40,15 @@ class Article extends React.Component {
                           key={uuid()}
                         >
                           <div className="col mb-5 mt-3">
-                            <div
-                              className="card h-100 border-0 shadow"
-                              style={{ backgroundColor: "#e6e6e6" }}
-                            >
+                            <div className="card h-100 border-0 shadow card_background rounded">
                               {" "}
-                              <div className="overlay_container">
+                              <div className="overlay_container rounded">
                                 <img
                                   src={`./articles/${project.img}`}
-                                  className="card-img-top article_svg_responsive"
+                                  className="card-img-top article_svg_responsive rounded"
                                   alt="..."
                                 />
-                                <div className="work_image_overlay">
+                                <div className="work_image_overlay rounded">
                                   <div className="text">
                                     {project.link ? (
                                       <a
@@ -117,17 +114,14 @@ class Article extends React.Component {
                         >
                           <Flipped flipId="coolDiv" ease="easeOutExpo">
                             <div className="col mb-5 mt-3">
-                              <div
-                                className="card h-100 border-0 shadow "
-                                style={{ backgroundColor: "#e6e6e6" }}
-                              >
+                              <div className="card h-100 border-0 shadow card_background rounded">
                                 <div className="overlay_container">
                                   <img
                                     src={`./articles/${project.img}`}
-                                    className="card-img-top article_svg_responsive"
+                                    className="card-img-top article_svg_responsive rounded"
                                     alt="..."
                                   />
-                                  <div className="work_image_overlay">
+                                  <div className="work_image_overlay rounded">
                                     <div className="text">
                                       {project.link ? (
                                         <a

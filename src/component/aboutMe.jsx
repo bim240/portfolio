@@ -10,7 +10,7 @@ const AboutMe = () => {
   return (
     <>
       {" "}
-      <Jumbotron id="aboutme">
+      <Jumbotron id="aboutme" className="aboutme_section">
         <Container>
           <h2 className=" font-weight-bold">About Me</h2>
           <h5 className="font-weight-bold heading-3">
