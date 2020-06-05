@@ -34,16 +34,6 @@ body::-webkit-scrollbar {
   color: black;
   transition: all 400ms;
 }
-/* .margin_top {
-  margin-top: 1rem;
-} */
-.parallax {
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 /* my work */
 

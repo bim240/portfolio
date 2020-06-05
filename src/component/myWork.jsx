@@ -90,6 +90,7 @@ class MyWork extends React.Component {
                             <div className="overlay_container rounded">
                               <img
                                 src={`./project/${project.img}`}
+                                loading="lazy"
                                 className="card-img-top work_svg_responsive rounded"
                                 alt="..."
                               />
@@ -153,6 +154,7 @@ class MyWork extends React.Component {
                             <div className="overlay_container rounded  ">
                               <img
                                 src={`./project/${project.img}`}
+                                loading="lazy"
                                 className="card-img-top work_svg_responsive rounded "
                                 alt="..."
                               />
