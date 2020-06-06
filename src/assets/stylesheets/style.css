@@ -11,7 +11,7 @@ body::-webkit-scrollbar {
 
 .home_section {
   background-color: rgb(10, 10, 10);
-  background-image: url("../images/home.jpg");
+  background-image: url("../images/home.webp");
   background-repeat: no-repeat;
   background-size: cover;
   height: 92vh;
