@@ -47,7 +47,7 @@ class Article extends React.Component {
                                   src={`./articles/${project.img}`}
                                   loading="lazy"
                                   className="card-img-top article_svg_responsive rounded"
-                                  alt="bimlendu portfolio article image"
+                                  alt="bimlendu portfolio article"
                                 />
                                 <div className="work_image_overlay rounded">
                                   <div className="text">
@@ -121,7 +121,7 @@ class Article extends React.Component {
                                     src={`./articles/${project.img}`}
                                     loading="lazy"
                                     className="card-img-top article_svg_responsive rounded"
-                                    alt="Bimlendu profolio project image"
+                                    alt="Bimlendu profolio project "
                                   />
                                   <div className="work_image_overlay rounded">
                                     <div className="text">

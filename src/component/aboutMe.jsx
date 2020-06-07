@@ -12,6 +12,7 @@ const AboutMe = () => {
       {" "}
       <Jumbotron id="aboutme" className="aboutme_section">
         <Container>
+          <h1 className="hide"> bimlendu portfolio about section </h1>
           <h2 className=" font-weight-bold">About Me</h2>
           <h5 className="font-weight-bold heading-3">
             Hello I'm Bimlendu Kumar
