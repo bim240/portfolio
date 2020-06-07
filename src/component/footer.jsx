@@ -4,6 +4,7 @@ import { FaTwitter, FaGithub, FaLinkedin, FaLaptopCode } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="bg-dark " style={{ padding: "10px" }}>
+      <h1 className="hide"> bimlendu portfolio footer section </h1>
       {/* <Navbar collapseOnSelect expand="md" bg="dark" variant="dark"> */}
       <Container>
         <div className="mt-2 mx-auto text-center">

@@ -60,6 +60,7 @@ class Contact extends React.Component {
     return (
       <>
         <Container className="mt-5 mb-5 " id="contacts">
+          <h1 className="hide"> bimlendu portfolio contact section </h1>
           <h2 className=" font-weight-bold text-center">Get in touch</h2>
           {/* <p className="font-weight-bold">To write is to reveal oneself.</p> */}
           <form

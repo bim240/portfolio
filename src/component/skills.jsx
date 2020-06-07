@@ -19,6 +19,7 @@ const Skills = () => {
       {/* <Jumbotron> */}
       <div className="container" id="skills">
         {/* <Link> */}
+        <h1 className="hide"> bimlendu portfolio skills section </h1>
         <h2 className=" font-weight-bold">Skills</h2>
         {/* </Link> */}
         <p className="font-weight-bold">

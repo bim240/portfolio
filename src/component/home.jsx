@@ -14,6 +14,7 @@ const Home = () => {
             <Card.ImgOverlay>
               <Container>
                 <Card.Title className="margin_top">
+                  <h2 className="hide"> bimlendu portfolio home section </h2>
                   <h1 className="font-weight-bold " key="1">
                     I'm Bimlendu
                   </h1>
