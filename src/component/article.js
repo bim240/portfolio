@@ -23,7 +23,6 @@ class Article extends React.Component {
         {" "}
         <>
           <div className="container mt-5" id="articles">
-            <h1 className="seo">Bimlendu Portfolio article section</h1>
             <h2 className=" font-weight-bold">Articles</h2>
             <p className="font-weight-bold">To write is to reveal oneself.</p>
 

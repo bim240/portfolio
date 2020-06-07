@@ -10,7 +10,6 @@ const Home = () => {
     <>
       <QueueAnim>
         <section className="home_section parallex" id="home">
-          <h1 className="seo">Bimlendu Portfolio home section</h1>
           <Card className="bg-dark text-white no_radius flex">
             <Card.ImgOverlay>
               <Container>
