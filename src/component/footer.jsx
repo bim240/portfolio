@@ -6,6 +6,7 @@ const Footer = () => {
     <div className="bg-dark " style={{ padding: "10px" }}>
       {/* <Navbar collapseOnSelect expand="md" bg="dark" variant="dark"> */}
       <Container>
+        <h1 className="seo">Bimlendu Portfolio footer section</h1>
         <div className="mt-2 mx-auto text-center" style={{ width: "200px" }}>
           <a
             title="CodeWars"

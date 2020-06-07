@@ -21,6 +21,7 @@ class MyWork extends React.Component {
     return (
       <>
         <div className="container mt-5" id="mywork">
+          <h1 className="seo">Bimlendu Portfolio my work section</h1>
           <h2 className=" font-weight-bold">My Work</h2>
           <p className="font-weight-bold">
             You've got to get up every morning with determination if you're
@@ -92,7 +93,7 @@ class MyWork extends React.Component {
                                 src={`./project/${project.img}`}
                                 loading="lazy"
                                 className="card-img-top work_svg_responsive rounded"
-                                alt="..."
+                                alt="bimlendu portfolio work image"
                               />
                               <div className="work_image_overlay rounded">
                                 <div className="text">
@@ -156,7 +157,7 @@ class MyWork extends React.Component {
                                 src={`./project/${project.img}`}
                                 loading="lazy"
                                 className="card-img-top work_svg_responsive rounded "
-                                alt="..."
+                                alt="bimlendu portfolio work  image"
                               />
                               <div className="work_image_overlay rounded">
                                 <div className="text">
