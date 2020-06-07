@@ -17,7 +17,6 @@ const Home = () => {
                   <h1 className="font-weight-bold " key="1">
                     I'm Bimlendu
                   </h1>
-                  <h2 className="seo">Bimlendu Portfolio</h2>
                 </Card.Title>
                 <Card.Text>
                   <h4 key="2">
