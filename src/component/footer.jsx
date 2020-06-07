@@ -6,10 +6,10 @@ const Footer = () => {
     <div className="bg-dark " style={{ padding: "10px" }}>
       {/* <Navbar collapseOnSelect expand="md" bg="dark" variant="dark"> */}
       <Container>
-        <div className="mt-2 mx-auto text-center" style={{ width: "200px" }}>
+        <div className="mt-2 mx-auto text-center">
           <a
             title="CodeWars"
-            className="link_icon mr-3"
+            className="link_icon mx-2"
             href="https://www.codewars.com/users/bim240"
             target="_blank"
             rel="noopener noreferrer"
@@ -18,7 +18,7 @@ const Footer = () => {
           </a>
           <a
             title="Twitter"
-            className="link_icon mr-3"
+            className="link_icon mx-2"
             href="https://twitter.com/bim240"
             target="_blank"
             rel="noopener noreferrer"
@@ -28,7 +28,7 @@ const Footer = () => {
           </a>
           <a
             title="GitHub"
-            className="link_icon mr-3"
+            className="link_icon mx-2"
             href="https://github.com/bim240"
             target="_blank"
             rel="noopener noreferrer"
@@ -37,7 +37,7 @@ const Footer = () => {
           </a>
           <a
             title="LinkedIn"
-            className="link_icon mr-3"
+            className="link_icon mx-2"
             href="https://www.linkedin.com/in/bim240/"
             target="_blank"
             rel="noopener noreferrer"
@@ -45,13 +45,7 @@ const Footer = () => {
             <FaLinkedin />
           </a>
         </div>
-        <div
-          className="font-weight-bold mx-auto  mt-2"
-          style={{
-            width: "200px",
-            color: "white",
-          }}
-        >
+        <div className="font-weight-bold mx-auto text-center text-white mt-2">
           Bimlendu &copy; AltCampus
         </div>
       </Container>
