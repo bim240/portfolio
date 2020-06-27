@@ -112,3 +112,34 @@ body::-webkit-scrollbar {
   top: -9999px !important;
   left: -9999px !important;
 }
+
+/* header toggle hamburger */
+
+@media (max-width: 768px) {
+  .home_section {
+    height: 100vh;
+  }
+  .mob_hamburger {
+    position: fixed !important;
+    bottom: 0;
+    right: 0;
+    background-color: transparent !important;
+    color: black !important;
+  }
+  .mob_hamburger .font-weight-bold {
+    display: none;
+  }
+  .mob_hamburger .mob_hamburger_icon {
+    border-radius: 5px;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    background-color: #343a40;
+  }
+  .mob_hamburger .nav-link {
+    text-shadow: 5px 5px 10px black !important;
+    /* box-shadow: 0 0 5px black; */
+    color: black !important;
+    font-size: 1rem !important;
+  }
+}

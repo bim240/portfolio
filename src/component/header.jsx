@@ -31,18 +31,20 @@ class Header extends React.Component {
     return (
       <>
         <Navbar
+          className="mob_hamburger"
           collapseOnSelect
           expand="xl"
           sticky="top"
           bg="dark"
-          variant="dark"
-        >
+          variant="dark">
           <Container>
             <h1 className="hide"> bimlendu portfolio header section </h1>
             <Navbar.Brand href="#home" className="font-weight-bold">
               Bimlendu
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <div className="mob_hamburger_icon">
+              <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            </div>
 
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="ml-auto h4_heading">
@@ -50,48 +52,42 @@ class Header extends React.Component {
                   className={`mr-2 nav-link ${
                     this.state.active === "home" ? "active" : ""
                   }`}
-                  href="#home"
-                >
+                  href="#home">
                   Home
                 </Nav.Link>
                 <Nav.Link
                   className={`mr-2 nav-link ${
                     this.state.active === "aboutme" ? "active" : ""
                   }`}
-                  href="#aboutme"
-                >
+                  href="#aboutme">
                   About Me
                 </Nav.Link>
                 <Nav.Link
                   className={`mr-2 nav-link ${
                     this.state.active === "skills" ? "active" : ""
                   }`}
-                  href="#skills"
-                >
+                  href="#skills">
                   Skills
                 </Nav.Link>
                 <Nav.Link
                   className={`mr-2 nav-link ${
                     this.state.active === "work" ? "active" : ""
                   }`}
-                  href="#mywork"
-                >
+                  href="#mywork">
                   My Work
                 </Nav.Link>
                 <Nav.Link
                   className={`mr-2 nav-link ${
                     this.state.active === "articles" ? "active" : ""
                   }`}
-                  href="#articles"
-                >
+                  href="#articles">
                   Blog
                 </Nav.Link>
                 <Nav.Link
                   className={`mr-2 nav-link ${
                     this.state.active === "contacts" ? "active" : ""
                   }`}
-                  href="#contacts"
-                >
+                  href="#contacts">
                   Contacts
                 </Nav.Link>
               </Nav>
