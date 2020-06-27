@@ -120,15 +120,17 @@ body::-webkit-scrollbar {
     height: 100vh;
   }
   .mob_hamburger {
+    /* display: none; */
     position: fixed !important;
-    bottom: 0;
-    right: 0;
-    background-color: transparent !important;
-    color: black !important;
+    z-index: 1;
+    top: 95vh;
+
+    /* background-color: transparent !important; */
+    /* color: black !important; */
   }
-  .mob_hamburger .font-weight-bold {
+  /* .mob_brand {
     display: none;
-  }
+  } */
   .mob_hamburger .mob_hamburger_icon {
     border-radius: 5px;
     position: absolute;

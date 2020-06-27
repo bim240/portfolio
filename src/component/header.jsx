@@ -39,7 +39,7 @@ class Header extends React.Component {
           variant="dark">
           <Container>
             <h1 className="hide"> bimlendu portfolio header section </h1>
-            <Navbar.Brand href="#home" className="font-weight-bold">
+            <Navbar.Brand href="#home" className="font-weight-bold mob_brand">
               Bimlendu
             </Navbar.Brand>
             <div className="mob_hamburger_icon">
