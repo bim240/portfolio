@@ -115,6 +115,9 @@ body::-webkit-scrollbar {
 
 /* header toggle hamburger */
 @media (max-width: 768px) {
+  .home_section {
+    height: 100vh;
+  }
   .sticky_bottom {
     position: fixed !important;
     /* bottom: 95vh !important; */
