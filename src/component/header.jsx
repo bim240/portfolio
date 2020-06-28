@@ -31,7 +31,7 @@ class Header extends React.Component {
     return (
       <>
         <Navbar
-          className="mob_hamburger"
+          className="sticky_bottom"
           collapseOnSelect
           expand="xl"
           sticky="top"
@@ -46,45 +46,45 @@ class Header extends React.Component {
               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             </div>
 
-            <Navbar.Collapse id="responsive-navbar-nav">
-              <Nav className="ml-auto h4_heading">
+            <Navbar.Collapse id="responsive-navbar-nav ">
+              <Nav className="ml-auto h4_heading mob_nav_bar ">
                 <Nav.Link
-                  className={`mr-2 nav-link ${
+                  className={`mr-2 nav-link mob_nav_bar_link ${
                     this.state.active === "home" ? "active" : ""
                   }`}
                   href="#home">
                   Home
                 </Nav.Link>
                 <Nav.Link
-                  className={`mr-2 nav-link ${
+                  className={`mr-2 nav-link mob_nav_bar_link ${
                     this.state.active === "aboutme" ? "active" : ""
                   }`}
                   href="#aboutme">
                   About Me
                 </Nav.Link>
                 <Nav.Link
-                  className={`mr-2 nav-link ${
+                  className={`mr-2 nav-link mob_nav_bar_link${
                     this.state.active === "skills" ? "active" : ""
                   }`}
                   href="#skills">
                   Skills
                 </Nav.Link>
                 <Nav.Link
-                  className={`mr-2 nav-link ${
+                  className={`mr-2 nav-link mob_nav_bar_link ${
                     this.state.active === "work" ? "active" : ""
                   }`}
                   href="#mywork">
                   My Work
                 </Nav.Link>
                 <Nav.Link
-                  className={`mr-2 nav-link ${
+                  className={`mr-2 nav-link  mob_nav_bar_link${
                     this.state.active === "articles" ? "active" : ""
                   }`}
                   href="#articles">
                   Blog
                 </Nav.Link>
                 <Nav.Link
-                  className={`mr-2 nav-link ${
+                  className={`mr-2 nav-link mob_nav_bar_link${
                     this.state.active === "contacts" ? "active" : ""
                   }`}
                   href="#contacts">
