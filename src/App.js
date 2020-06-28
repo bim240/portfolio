@@ -1,6 +1,6 @@
 import React, { Suspense, lazy } from "react";
 
-import "./assets/stylesheets/style.css";
+import "./assets/stylesheets/style.scss";
 import Loading from "./component/loading/loading";
 
 const Header = lazy(() => import("./component/header"));
