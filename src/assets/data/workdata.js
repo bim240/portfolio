@@ -10,6 +10,33 @@ var workData = [
     catagory: "node",
   },
   {
+    title: "2048",
+    description: "Play 2048 with added feature of redo, undo, replay.",
+    link: "https://letsplay2048.netlify.app/",
+    gitLink: "https://github.com/bim240/2048",
+    img: "2048.png",
+    tag: ["React"],
+    catagory: "react",
+  },
+  {
+    title: "E-commerce",
+    description: "An e-commerce website.",
+    link: null,
+    gitLink: "https://github.com/bim240/eCart-fullstack",
+    img: "supermarket.svg",
+    tag: ["HTML", "CSS"],
+    catagory: "html",
+  },
+  {
+    title: "Gallery",
+    description: "An app where on can upload, crop, delete, edit an image.",
+    link: null,
+    gitLink: "https://github.com/bim240/gallery",
+    img: "drawing.svg",
+    tag: ["JavaScript"],
+    catagory: "js",
+  },
+  {
     title: "Mini React",
     description:
       "This project was made for a better understanding of React internal and its working.",
@@ -51,52 +78,32 @@ var workData = [
   },
 
   {
-    title: "Bookly",
+    title: "COVID-19 Zone",
     description:
-      "A project made to keep track of all the books one is reading.",
-    link: "https://bookly357.netlify.com",
-    gitLink: "https://github.com/bim240/bookly",
-    img: "book.svg",
+      "Know which zone you and your loved once are (According to Indian govt.)",
+    link: "https://covid19zone.herokuapp.com/",
+    gitLink: "https://github.com/bim240/Know_your_covid-19_zone",
+    img: "virus.svg",
+    tag: ["React"],
+    catagory: "react",
+  },
+
+  {
+    title: "Conduit API",
+    description: "Created REST API using expressjs for conduit",
+    link: null,
+    img: "api1.svg",
     tag: ["JavaScript"],
+    gitLink: "https://github.com/bim240/conduitAPI_nodejs_express",
     catagory: "js",
   },
+
   {
-    title: "Todo",
-    description:
-      "A project aimed for better understanding of vanillia js and how DOM manupulation works.",
-    link: "https://todo357.netlify.com",
-    gitLink: "https://github.com/bim240/todos",
-    img: "list.svg",
-    tag: ["JavaScript"],
-    catagory: "js",
-  },
-  {
-    title: "Canvas 1",
-    description:
-      "A project aimed for better understanding of Canvas. Creating path for different particles and there motion.",
-    link: "https://canvas1-357.netlify.com",
-    gitLink: "https://github.com/bim240/canvasproject1",
-    img: "drawing.svg",
-    tag: ["JavaScript"],
-    catagory: "js",
-  },
-  {
-    title: "Canvas 2",
-    description:
-      "A project aimed for better understanding of Canvas. Creating path for different particles and there motion.",
-    link: "https://canvas2-357.netlify.com",
-    img: "drawing.svg",
-    tag: ["JavaScript"],
-    gitLink: "https://github.com/bim240/canvasproject3",
-    catagory: "js",
-  },
-  {
-    title: "Alien face",
-    description:
-      "An alien face made with HTML & CSS. Its really cool and funny",
-    link: "https://alienface357.netlify.com",
-    gitLink: "https://github.com/bim240/alienface",
-    img: "alien.svg",
+    title: "Quiz-app",
+    description: "Create your own quiz or play quiz created by others",
+    link: null,
+    gitLink: "https://github.com/bim240/form-app-forntend",
+    img: "quiz.svg",
     tag: ["HTML", "CSS"],
     catagory: "html",
   },
