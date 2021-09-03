@@ -19,28 +19,35 @@ const AboutMe = () => {
           </h5>
           <div className="row row-cols-1 row-cols-sm-1 row-cols-md-2 mt-4">
             <div className="col">
-              <div className="col m-3 font-weight-bold">
+              {/* <div className="col m-3 font-weight-bold">
                 {" "}
                 <FaBirthdayCake className="mr-2" />
                 Birthday : 23 Febuary
-              </div>
+              </div> */}
               <div className="col m-3 alert-link">
                 {" "}
                 <FaGlobeAsia className="mr-2" />
-                Website : <a href="https://www.bimlendu.me/">
-                  www.bimlendu.me
+                Blog : <a href="https://www.mywritings.in">
+                 www.mywritings.in
                 </a>{" "}
               </div>
               <div className="col m-3 font-weight-bold">
                 {" "}
-                <IoIosCall className="mr-2" />
-                Phone no : +91 8910610326
+                <MdEmail className="mr-2" />
+                Email :{" "}
+                <a href="mailto:bimlendu357@gmail.com">
+                  bimlendu357@gmail.com
+                </a>
               </div>
               <div className="col m-3 font-weight-bold">
                 {" "}
-                <FaCity className="mr-2" />
-                City : Dharamshala, INDIA
+                <IoIosCall className="mr-2" />
+                Phone no : {" "}
+                <a href="tel:+918910610326">
+                   +91 8910610326
+                </a>
               </div>
+              
               {/* <div className="col m-3 font-weight-bold">
                 <button type="button" className="btn btn-dark m-3">
                   Download CV
@@ -50,25 +57,26 @@ const AboutMe = () => {
             {/* columan 2 */}
             <div className="col">
               {" "}
-              <div className="col m-3 font-weight-bold">
+              {/* <div className="col m-3 font-weight-bold">
                 {" "}
                 <DiYeoman className="mr-2" />
                 Age : 24
-              </div>
+              </div> */}
               <div className="col m-3 font-weight-bold">
                 {" "}
                 <FaBook className="mr-2" />
                 Degree : Bachelor
               </div>
-              <div className="col m-3 font-weight-bold">
-                {" "}
-                <MdEmail className="mr-2" />
-                Email : bimlendu357@gmail.com
-              </div>
+              
               <div className="col m-3 font-weight-bold">
                 {" "}
                 <GiFreedomDove className="mr-2" />
                 Freelance : Available
+              </div>
+              <div className="col m-3 font-weight-bold">
+                {" "}
+                <FaCity className="mr-2" />
+                City : Dharamshala, INDIA
               </div>
               {/* <div className="col m-3 font-weight-bold">
                 <button type="button" className="btn btn-dark m-3">
