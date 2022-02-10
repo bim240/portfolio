@@ -9,7 +9,7 @@
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.4.1",
     "emailjs-com": "^2.4.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "notistack": "^0.9.17",
     "rc-queue-anim": "^1.8.4",
     "react": "^16.13.1",
